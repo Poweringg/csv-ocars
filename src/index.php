@@ -70,8 +70,8 @@ if(isset($_POST['submit'])){
 
         <div class="table-wrapper">
             <?php 
-            //podle roku
             if(isset($csv)){
+				//podle roku
                 echo '
                 <div class="table-output" id="year">
                     <h3>Přehled dle roku</h3>
@@ -81,15 +81,13 @@ if(isset($_POST['submit'])){
                 echo '</div>'; 
                 
                 //podle filmu
-                if(isset($csv)){
-                    echo '
-                    <div class="table-output" id="movie">
-                        <h3>Filmy, které obdržely oscary</h3>
-                        <p>Řazení abecedně A-Z</p>
-                        ';
-                        $csv->getTableByMovie();
-                    echo '</div>';    
-                }
+				echo '
+				<div class="table-output" id="movie">
+					<h3>Filmy, které obdržely oscary</h3>
+					<p>Řazení abecedně A-Z</p>
+					';
+					$csv->getTableByMovie();
+				echo '</div>';    
             }
             ?>
         </div>
