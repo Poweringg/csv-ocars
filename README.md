@@ -4,8 +4,18 @@ Zpracování dvou paralerních .CSV souborů, následné spojení dat v jedné a
 Na základě zpracovaných dat, se zobrazí dvě tabulky s řazením "Dle roku" a "Dle filmu".
 
 ## Jak spustit aplikaci
-Pomocí Dockeru můžete spustit aplikaci příkazem:
 
+Stáhněte si tento repo:
+```shell
+git clone https://github.com/Poweringg/csv-oscars.git
+```
+
+Přesuňte se do složky s projektem
+```shell
+cd csv-oscars
+```
+
+Pomocí Dockeru můžete spustit aplikaci příkazem:
 ```shell
 docker compose up
 ```
