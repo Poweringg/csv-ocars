@@ -29,10 +29,11 @@ class CsvProcessor {
 
     //ziskat obsah z csv souboru a vlozit do array $data
     public function readCsv($file,$filename){
+        //obsahuje nazev souboru "male" nebo "female" ?
         $gender = "";
-        if (strpos($filename, 'female') !== false) {
+        if(strpos($filename, 'female') !== false){
             $gender = "female";
-        } elseif (strpos($filename, 'male') !== false) {
+        } elseif(strpos($filename, 'male') !== false){
             $gender = "male";
         }
 
