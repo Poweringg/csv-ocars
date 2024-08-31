@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 85%;
+    margin: 3em auto;
+}
+.upload-form{
+    margin-top: 3em;
+}
+.errorMessage{
+    text-align: center;
+    color: #ff0000;
+    font-weight: bold;
+}
+.upload-buttons{
+    display: flex;
+    margin-bottom: 3em;
+    margin-top: 2em;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.table-wrapper{
+    display: flex;
+    gap: 6%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.table-wrapper > .table-output{
+    display: none;
+    flex: 1;
+}
